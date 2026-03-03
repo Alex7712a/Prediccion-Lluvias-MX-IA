@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_76271c8fa5a1e95434cc9e88bdb47cce {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_76271c8fa5a1e95434cc9e88bdb47cce" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_76271c8fa5a1e95434cc9e88bdb47cce = L.map(
+                "map_76271c8fa5a1e95434cc9e88bdb47cce",
+                {
+                    center: [23.63, -102.55],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1c32d2ece7357ef7d498e6af7631a12b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1c32d2ece7357ef7d498e6af7631a12b.addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var marker_74c3492aefce7b5e6951ecd77c859e73 = L.marker(
+                [21.88, -102.29],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_7e3fa0b7149f34cd483774ccdbf381b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34ca5f8f8bc6d1a8cffa5f1b42688520 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ded9b9f9b844ce3b9ff688532c979060 = $(`<div id="html_ded9b9f9b844ce3b9ff688532c979060" style="width: 100.0%; height: 100.0%;"><b>AGUASCALIENTES</b><br>Lluvia: 3.7<br>Rad: 522<br>AQI: 78</div>`)[0];
+                popup_34ca5f8f8bc6d1a8cffa5f1b42688520.setContent(html_ded9b9f9b844ce3b9ff688532c979060);
+            
+        
+
+        marker_74c3492aefce7b5e6951ecd77c859e73.bindPopup(popup_34ca5f8f8bc6d1a8cffa5f1b42688520)
+        ;
+
+        
+    
+    
+            marker_74c3492aefce7b5e6951ecd77c859e73.bindTooltip(
+                `<div>
+                     AGUASCALIENTES
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74c3492aefce7b5e6951ecd77c859e73.setIcon(icon_7e3fa0b7149f34cd483774ccdbf381b1);
+            
+    
+            var marker_591a2867ed32e2ea4bfb7caffebeacfe = L.marker(
+                [23.1, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_d8bd9c9481c86f3ee4ca5c0da4d33115 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c821e270ab89380dbe7a3aaf5e47198 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ea0dee2dbd371466a348b8a5c357da4 = $(`<div id="html_3ea0dee2dbd371466a348b8a5c357da4" style="width: 100.0%; height: 100.0%;"><b>BAJA_CALIFORNIA</b><br>Lluvia: 3.7<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_4c821e270ab89380dbe7a3aaf5e47198.setContent(html_3ea0dee2dbd371466a348b8a5c357da4);
+            
+        
+
+        marker_591a2867ed32e2ea4bfb7caffebeacfe.bindPopup(popup_4c821e270ab89380dbe7a3aaf5e47198)
+        ;
+
+        
+    
+    
+            marker_591a2867ed32e2ea4bfb7caffebeacfe.bindTooltip(
+                `<div>
+                     BAJA_CALIFORNIA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_591a2867ed32e2ea4bfb7caffebeacfe.setIcon(icon_d8bd9c9481c86f3ee4ca5c0da4d33115);
+            
+    
+            var marker_514bbe5695ad7b8b1b30702aca69eea1 = L.marker(
+                [23.2, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_4a18a01abaec52f6e51acb8ba2674070 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80b42f0f8721d03ca5dcdbb1491c19f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f50936fe908ece2834a8e54e166a02b = $(`<div id="html_6f50936fe908ece2834a8e54e166a02b" style="width: 100.0%; height: 100.0%;"><b>BAJA_CALIFORNIA_SUR</b><br>Lluvia: 3.7<br>Rad: 522<br>AQI: 78</div>`)[0];
+                popup_80b42f0f8721d03ca5dcdbb1491c19f7.setContent(html_6f50936fe908ece2834a8e54e166a02b);
+            
+        
+
+        marker_514bbe5695ad7b8b1b30702aca69eea1.bindPopup(popup_80b42f0f8721d03ca5dcdbb1491c19f7)
+        ;
+
+        
+    
+    
+            marker_514bbe5695ad7b8b1b30702aca69eea1.bindTooltip(
+                `<div>
+                     BAJA_CALIFORNIA_SUR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_514bbe5695ad7b8b1b30702aca69eea1.setIcon(icon_4a18a01abaec52f6e51acb8ba2674070);
+            
+    
+            var marker_d334787d4b5646083e2e73a014e57204 = L.marker(
+                [23.3, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_2e16262c7a108d215454c00bbded56ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9976b69ef3a8eb47a0640f56012ea4f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be2cf1d6c58372b53525420d4e79d490 = $(`<div id="html_be2cf1d6c58372b53525420d4e79d490" style="width: 100.0%; height: 100.0%;"><b>CAMPECHE</b><br>Lluvia: 3.7<br>Rad: 522<br>AQI: 78</div>`)[0];
+                popup_9976b69ef3a8eb47a0640f56012ea4f2.setContent(html_be2cf1d6c58372b53525420d4e79d490);
+            
+        
+
+        marker_d334787d4b5646083e2e73a014e57204.bindPopup(popup_9976b69ef3a8eb47a0640f56012ea4f2)
+        ;
+
+        
+    
+    
+            marker_d334787d4b5646083e2e73a014e57204.bindTooltip(
+                `<div>
+                     CAMPECHE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d334787d4b5646083e2e73a014e57204.setIcon(icon_2e16262c7a108d215454c00bbded56ed);
+            
+    
+            var marker_1fabd37fd8ccccaf6cf220c19b35fd08 = L.marker(
+                [23.4, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_7a396c1a2dc254e5facdf560fba91075 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8475e58cbb4894c9867dade974326cd6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4151e0ea30d71c677361ec84cd1fd56d = $(`<div id="html_4151e0ea30d71c677361ec84cd1fd56d" style="width: 100.0%; height: 100.0%;"><b>CHIAPAS</b><br>Lluvia: 3.8<br>Rad: 522<br>AQI: 78</div>`)[0];
+                popup_8475e58cbb4894c9867dade974326cd6.setContent(html_4151e0ea30d71c677361ec84cd1fd56d);
+            
+        
+
+        marker_1fabd37fd8ccccaf6cf220c19b35fd08.bindPopup(popup_8475e58cbb4894c9867dade974326cd6)
+        ;
+
+        
+    
+    
+            marker_1fabd37fd8ccccaf6cf220c19b35fd08.bindTooltip(
+                `<div>
+                     CHIAPAS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1fabd37fd8ccccaf6cf220c19b35fd08.setIcon(icon_7a396c1a2dc254e5facdf560fba91075);
+            
+    
+            var marker_f5ac9d7baa282e0b6e9f212655cf2629 = L.marker(
+                [23.5, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_8541c48c3ccf9426ac06fbb7cf4c5100 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d3499949e068fe802be4efac57dcfa5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7bb5a17c0fd875007f1238786e3b66d = $(`<div id="html_f7bb5a17c0fd875007f1238786e3b66d" style="width: 100.0%; height: 100.0%;"><b>CHIHUAHUA</b><br>Lluvia: 3.7<br>Rad: 522<br>AQI: 78</div>`)[0];
+                popup_4d3499949e068fe802be4efac57dcfa5.setContent(html_f7bb5a17c0fd875007f1238786e3b66d);
+            
+        
+
+        marker_f5ac9d7baa282e0b6e9f212655cf2629.bindPopup(popup_4d3499949e068fe802be4efac57dcfa5)
+        ;
+
+        
+    
+    
+            marker_f5ac9d7baa282e0b6e9f212655cf2629.bindTooltip(
+                `<div>
+                     CHIHUAHUA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f5ac9d7baa282e0b6e9f212655cf2629.setIcon(icon_8541c48c3ccf9426ac06fbb7cf4c5100);
+            
+    
+            var marker_bc57e1b443be3bb7d907bfe3e161de5c = L.marker(
+                [23.6, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_5fdd9f94e888cabb75896cc09fe152ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d9a8545f03832cc2a220a2f0e7860d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df295deef19d8db8d93c1ddeb07d243c = $(`<div id="html_df295deef19d8db8d93c1ddeb07d243c" style="width: 100.0%; height: 100.0%;"><b>CIUDAD_DE_MÉXICO</b><br>Lluvia: 3.7<br>Rad: 523<br>AQI: 78</div>`)[0];
+                popup_2d9a8545f03832cc2a220a2f0e7860d6.setContent(html_df295deef19d8db8d93c1ddeb07d243c);
+            
+        
+
+        marker_bc57e1b443be3bb7d907bfe3e161de5c.bindPopup(popup_2d9a8545f03832cc2a220a2f0e7860d6)
+        ;
+
+        
+    
+    
+            marker_bc57e1b443be3bb7d907bfe3e161de5c.bindTooltip(
+                `<div>
+                     CIUDAD_DE_MÉXICO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc57e1b443be3bb7d907bfe3e161de5c.setIcon(icon_5fdd9f94e888cabb75896cc09fe152ca);
+            
+    
+            var marker_18140c73e220e435e5fd07aae6d389ae = L.marker(
+                [23.7, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_e2895cb8759472651ff93eaa4b8816a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d758e45b7f0141938999d2618a218eee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fff205f8edf2cfb745c940f369db058b = $(`<div id="html_fff205f8edf2cfb745c940f369db058b" style="width: 100.0%; height: 100.0%;"><b>COAHUILA_DE_ZARAGOZA</b><br>Lluvia: 3.7<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_d758e45b7f0141938999d2618a218eee.setContent(html_fff205f8edf2cfb745c940f369db058b);
+            
+        
+
+        marker_18140c73e220e435e5fd07aae6d389ae.bindPopup(popup_d758e45b7f0141938999d2618a218eee)
+        ;
+
+        
+    
+    
+            marker_18140c73e220e435e5fd07aae6d389ae.bindTooltip(
+                `<div>
+                     COAHUILA_DE_ZARAGOZA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_18140c73e220e435e5fd07aae6d389ae.setIcon(icon_e2895cb8759472651ff93eaa4b8816a9);
+            
+    
+            var marker_5e55f7acda1971b3e3251432209df3cb = L.marker(
+                [23.8, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_aa7d1076f7f90b02827512229113a06d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6f71cff811173c08be832bc4d2b37b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ffba8834dd6e2a5e4faeacf73919b82 = $(`<div id="html_2ffba8834dd6e2a5e4faeacf73919b82" style="width: 100.0%; height: 100.0%;"><b>COLIMA</b><br>Lluvia: 3.8<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_b6f71cff811173c08be832bc4d2b37b7.setContent(html_2ffba8834dd6e2a5e4faeacf73919b82);
+            
+        
+
+        marker_5e55f7acda1971b3e3251432209df3cb.bindPopup(popup_b6f71cff811173c08be832bc4d2b37b7)
+        ;
+
+        
+    
+    
+            marker_5e55f7acda1971b3e3251432209df3cb.bindTooltip(
+                `<div>
+                     COLIMA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e55f7acda1971b3e3251432209df3cb.setIcon(icon_aa7d1076f7f90b02827512229113a06d);
+            
+    
+            var marker_c4c7875dad74b49e0627be8576a2c8af = L.marker(
+                [23.9, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_2941cb58ed69b54685ddaafc8b32bb89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9e5b1d491f831f8e126e9ab058dc860 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_013c697ff03737876d0cad9b08d56cb1 = $(`<div id="html_013c697ff03737876d0cad9b08d56cb1" style="width: 100.0%; height: 100.0%;"><b>DURANGO</b><br>Lluvia: 3.8<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_f9e5b1d491f831f8e126e9ab058dc860.setContent(html_013c697ff03737876d0cad9b08d56cb1);
+            
+        
+
+        marker_c4c7875dad74b49e0627be8576a2c8af.bindPopup(popup_f9e5b1d491f831f8e126e9ab058dc860)
+        ;
+
+        
+    
+    
+            marker_c4c7875dad74b49e0627be8576a2c8af.bindTooltip(
+                `<div>
+                     DURANGO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c4c7875dad74b49e0627be8576a2c8af.setIcon(icon_2941cb58ed69b54685ddaafc8b32bb89);
+            
+    
+            var marker_22391218cbbf283055e6970ed5e50b46 = L.marker(
+                [24.0, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_82ea636f33afa1c04c78e8c77647cb4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2eed8f7ecbc6eb469c983d995fddea18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73c21ad7e597358725179fe17a5560fe = $(`<div id="html_73c21ad7e597358725179fe17a5560fe" style="width: 100.0%; height: 100.0%;"><b>GUANAJUATO</b><br>Lluvia: 3.7<br>Rad: 522<br>AQI: 78</div>`)[0];
+                popup_2eed8f7ecbc6eb469c983d995fddea18.setContent(html_73c21ad7e597358725179fe17a5560fe);
+            
+        
+
+        marker_22391218cbbf283055e6970ed5e50b46.bindPopup(popup_2eed8f7ecbc6eb469c983d995fddea18)
+        ;
+
+        
+    
+    
+            marker_22391218cbbf283055e6970ed5e50b46.bindTooltip(
+                `<div>
+                     GUANAJUATO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_22391218cbbf283055e6970ed5e50b46.setIcon(icon_82ea636f33afa1c04c78e8c77647cb4d);
+            
+    
+            var marker_8ef97d68020ba222b672ad268791a485 = L.marker(
+                [24.1, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_0e9030a058011b0b13744f7f3668a48f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52ec43ec899c89ec5dacb3c282bfab6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a5e09d62298655408b711230bb5881d = $(`<div id="html_6a5e09d62298655408b711230bb5881d" style="width: 100.0%; height: 100.0%;"><b>GUERRERO</b><br>Lluvia: 3.7<br>Rad: 522<br>AQI: 78</div>`)[0];
+                popup_52ec43ec899c89ec5dacb3c282bfab6a.setContent(html_6a5e09d62298655408b711230bb5881d);
+            
+        
+
+        marker_8ef97d68020ba222b672ad268791a485.bindPopup(popup_52ec43ec899c89ec5dacb3c282bfab6a)
+        ;
+
+        
+    
+    
+            marker_8ef97d68020ba222b672ad268791a485.bindTooltip(
+                `<div>
+                     GUERRERO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8ef97d68020ba222b672ad268791a485.setIcon(icon_0e9030a058011b0b13744f7f3668a48f);
+            
+    
+            var marker_bd9e11cae0af6bab7d0b8fb8829c69f6 = L.marker(
+                [24.2, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_85ec8442c6874436e9f34d86f803c56a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0515ced485edb72f7c5fac9aaba40fa5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85a0009b09af65f3e3dbed55edc65135 = $(`<div id="html_85a0009b09af65f3e3dbed55edc65135" style="width: 100.0%; height: 100.0%;"><b>HIDALGO</b><br>Lluvia: 3.7<br>Rad: 523<br>AQI: 78</div>`)[0];
+                popup_0515ced485edb72f7c5fac9aaba40fa5.setContent(html_85a0009b09af65f3e3dbed55edc65135);
+            
+        
+
+        marker_bd9e11cae0af6bab7d0b8fb8829c69f6.bindPopup(popup_0515ced485edb72f7c5fac9aaba40fa5)
+        ;
+
+        
+    
+    
+            marker_bd9e11cae0af6bab7d0b8fb8829c69f6.bindTooltip(
+                `<div>
+                     HIDALGO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bd9e11cae0af6bab7d0b8fb8829c69f6.setIcon(icon_85ec8442c6874436e9f34d86f803c56a);
+            
+    
+            var marker_b3c04cad552144259fe3e8ae8c562471 = L.marker(
+                [20.65, -103.34],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_1512d091db28773af1e9edb317efb839 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e8873f728e02d3f7cd49aa0230f11dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4a431b250dde34170584e2c7a09771a = $(`<div id="html_e4a431b250dde34170584e2c7a09771a" style="width: 100.0%; height: 100.0%;"><b>JALISCO</b><br>Lluvia: 3.8<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_0e8873f728e02d3f7cd49aa0230f11dd.setContent(html_e4a431b250dde34170584e2c7a09771a);
+            
+        
+
+        marker_b3c04cad552144259fe3e8ae8c562471.bindPopup(popup_0e8873f728e02d3f7cd49aa0230f11dd)
+        ;
+
+        
+    
+    
+            marker_b3c04cad552144259fe3e8ae8c562471.bindTooltip(
+                `<div>
+                     JALISCO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b3c04cad552144259fe3e8ae8c562471.setIcon(icon_1512d091db28773af1e9edb317efb839);
+            
+    
+            var marker_1a660f8ceff05414e8d6e2c34f8db8e4 = L.marker(
+                [24.4, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_2d9a2e432992748262e59ebfc754420e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c80651cab1aa7cd5df93210a9130e6c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_685cb031dd4568a3e3c29e5ff35e9fc8 = $(`<div id="html_685cb031dd4568a3e3c29e5ff35e9fc8" style="width: 100.0%; height: 100.0%;"><b>MICHOACÁN_DE_OCAMPO</b><br>Lluvia: 3.8<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_8c80651cab1aa7cd5df93210a9130e6c.setContent(html_685cb031dd4568a3e3c29e5ff35e9fc8);
+            
+        
+
+        marker_1a660f8ceff05414e8d6e2c34f8db8e4.bindPopup(popup_8c80651cab1aa7cd5df93210a9130e6c)
+        ;
+
+        
+    
+    
+            marker_1a660f8ceff05414e8d6e2c34f8db8e4.bindTooltip(
+                `<div>
+                     MICHOACÁN_DE_OCAMPO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a660f8ceff05414e8d6e2c34f8db8e4.setIcon(icon_2d9a2e432992748262e59ebfc754420e);
+            
+    
+            var marker_f2b77b6a937a07fa38625a9692ab6788 = L.marker(
+                [24.5, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_3de195f5ee93892ed55c07d3eaa37628 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_969528b39d8908ed5a98a9f1c42de5a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_baffc716d128bb799eb920582cc6de61 = $(`<div id="html_baffc716d128bb799eb920582cc6de61" style="width: 100.0%; height: 100.0%;"><b>MORELOS</b><br>Lluvia: 3.8<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_969528b39d8908ed5a98a9f1c42de5a0.setContent(html_baffc716d128bb799eb920582cc6de61);
+            
+        
+
+        marker_f2b77b6a937a07fa38625a9692ab6788.bindPopup(popup_969528b39d8908ed5a98a9f1c42de5a0)
+        ;
+
+        
+    
+    
+            marker_f2b77b6a937a07fa38625a9692ab6788.bindTooltip(
+                `<div>
+                     MORELOS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f2b77b6a937a07fa38625a9692ab6788.setIcon(icon_3de195f5ee93892ed55c07d3eaa37628);
+            
+    
+            var marker_e8d1907bcc6c73bd5658f493e0a1fba4 = L.marker(
+                [24.6, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_de749b4af035feb1ccc136189f204b20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec15f3ee43f8a84db335a0eb0d594bba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09c2d6e7960d85ce6d3ae3456babcf87 = $(`<div id="html_09c2d6e7960d85ce6d3ae3456babcf87" style="width: 100.0%; height: 100.0%;"><b>MÉXICO</b><br>Lluvia: 3.8<br>Rad: 522<br>AQI: 78</div>`)[0];
+                popup_ec15f3ee43f8a84db335a0eb0d594bba.setContent(html_09c2d6e7960d85ce6d3ae3456babcf87);
+            
+        
+
+        marker_e8d1907bcc6c73bd5658f493e0a1fba4.bindPopup(popup_ec15f3ee43f8a84db335a0eb0d594bba)
+        ;
+
+        
+    
+    
+            marker_e8d1907bcc6c73bd5658f493e0a1fba4.bindTooltip(
+                `<div>
+                     MÉXICO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e8d1907bcc6c73bd5658f493e0a1fba4.setIcon(icon_de749b4af035feb1ccc136189f204b20);
+            
+    
+            var marker_1708b16466aa14aba018bd3aa65ca015 = L.marker(
+                [24.7, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_960396f2b7589e1737fc1d70d57cdd6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9211e41afd9763f90449816039915bab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97bfb307a48a218dab83eb1672220c3e = $(`<div id="html_97bfb307a48a218dab83eb1672220c3e" style="width: 100.0%; height: 100.0%;"><b>NAYARIT</b><br>Lluvia: 3.8<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_9211e41afd9763f90449816039915bab.setContent(html_97bfb307a48a218dab83eb1672220c3e);
+            
+        
+
+        marker_1708b16466aa14aba018bd3aa65ca015.bindPopup(popup_9211e41afd9763f90449816039915bab)
+        ;
+
+        
+    
+    
+            marker_1708b16466aa14aba018bd3aa65ca015.bindTooltip(
+                `<div>
+                     NAYARIT
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1708b16466aa14aba018bd3aa65ca015.setIcon(icon_960396f2b7589e1737fc1d70d57cdd6b);
+            
+    
+            var marker_ffa532870284c334c855063713204f1a = L.marker(
+                [25.68, -100.31],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_22ca974c411c7f91f0734feeea7ffac7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d28951cb065e787ae6fcad68bf64ad42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d970b85ee90f20381ad1ef93e6dc3f61 = $(`<div id="html_d970b85ee90f20381ad1ef93e6dc3f61" style="width: 100.0%; height: 100.0%;"><b>NUEVO_LEÓN</b><br>Lluvia: 3.8<br>Rad: 522<br>AQI: 78</div>`)[0];
+                popup_d28951cb065e787ae6fcad68bf64ad42.setContent(html_d970b85ee90f20381ad1ef93e6dc3f61);
+            
+        
+
+        marker_ffa532870284c334c855063713204f1a.bindPopup(popup_d28951cb065e787ae6fcad68bf64ad42)
+        ;
+
+        
+    
+    
+            marker_ffa532870284c334c855063713204f1a.bindTooltip(
+                `<div>
+                     NUEVO_LEÓN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ffa532870284c334c855063713204f1a.setIcon(icon_22ca974c411c7f91f0734feeea7ffac7);
+            
+    
+            var marker_0950e2e22b69ef070352e1edd1be295f = L.marker(
+                [24.9, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_8e84fb3849eecfc014365d3eea5567c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6b0f078118f9d9ed648f0190da6e44b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80b53182e9615e1c1099cc721d2e9265 = $(`<div id="html_80b53182e9615e1c1099cc721d2e9265" style="width: 100.0%; height: 100.0%;"><b>OAXACA</b><br>Lluvia: 3.8<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_e6b0f078118f9d9ed648f0190da6e44b.setContent(html_80b53182e9615e1c1099cc721d2e9265);
+            
+        
+
+        marker_0950e2e22b69ef070352e1edd1be295f.bindPopup(popup_e6b0f078118f9d9ed648f0190da6e44b)
+        ;
+
+        
+    
+    
+            marker_0950e2e22b69ef070352e1edd1be295f.bindTooltip(
+                `<div>
+                     OAXACA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0950e2e22b69ef070352e1edd1be295f.setIcon(icon_8e84fb3849eecfc014365d3eea5567c8);
+            
+    
+            var marker_1cc151ea86bef53f8eb601516a0fce53 = L.marker(
+                [25.0, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_dcd6a6683e8a8af270135f9c0d8e3f0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52a24ca17f272f0b2d24b879213cb184 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84a17052ed80ce13743f066642ba7edd = $(`<div id="html_84a17052ed80ce13743f066642ba7edd" style="width: 100.0%; height: 100.0%;"><b>PUEBLA</b><br>Lluvia: 3.7<br>Rad: 522<br>AQI: 78</div>`)[0];
+                popup_52a24ca17f272f0b2d24b879213cb184.setContent(html_84a17052ed80ce13743f066642ba7edd);
+            
+        
+
+        marker_1cc151ea86bef53f8eb601516a0fce53.bindPopup(popup_52a24ca17f272f0b2d24b879213cb184)
+        ;
+
+        
+    
+    
+            marker_1cc151ea86bef53f8eb601516a0fce53.bindTooltip(
+                `<div>
+                     PUEBLA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1cc151ea86bef53f8eb601516a0fce53.setIcon(icon_dcd6a6683e8a8af270135f9c0d8e3f0b);
+            
+    
+            var marker_8e26e32ce867a7d9aacc1f687e699197 = L.marker(
+                [25.1, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_50bb742cab671c2f52a529681c18e6cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_780a11b9496f94366fd515cf54424fa8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff2adf1b53c794e03880979e02ff3a7b = $(`<div id="html_ff2adf1b53c794e03880979e02ff3a7b" style="width: 100.0%; height: 100.0%;"><b>QUERÉTARO</b><br>Lluvia: 3.7<br>Rad: 522<br>AQI: 78</div>`)[0];
+                popup_780a11b9496f94366fd515cf54424fa8.setContent(html_ff2adf1b53c794e03880979e02ff3a7b);
+            
+        
+
+        marker_8e26e32ce867a7d9aacc1f687e699197.bindPopup(popup_780a11b9496f94366fd515cf54424fa8)
+        ;
+
+        
+    
+    
+            marker_8e26e32ce867a7d9aacc1f687e699197.bindTooltip(
+                `<div>
+                     QUERÉTARO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e26e32ce867a7d9aacc1f687e699197.setIcon(icon_50bb742cab671c2f52a529681c18e6cb);
+            
+    
+            var marker_5fbc8f35e5bdb6fd2ac6b6a2cbdada24 = L.marker(
+                [25.2, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_e1937a60f77da0872ca7285aaa929b78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2b71968cf54e09ed587b7717080bc26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4e3434438377d1f24c122b02e9e5ab7 = $(`<div id="html_c4e3434438377d1f24c122b02e9e5ab7" style="width: 100.0%; height: 100.0%;"><b>QUINTANA_ROO</b><br>Lluvia: 3.8<br>Rad: 520<br>AQI: 78</div>`)[0];
+                popup_a2b71968cf54e09ed587b7717080bc26.setContent(html_c4e3434438377d1f24c122b02e9e5ab7);
+            
+        
+
+        marker_5fbc8f35e5bdb6fd2ac6b6a2cbdada24.bindPopup(popup_a2b71968cf54e09ed587b7717080bc26)
+        ;
+
+        
+    
+    
+            marker_5fbc8f35e5bdb6fd2ac6b6a2cbdada24.bindTooltip(
+                `<div>
+                     QUINTANA_ROO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5fbc8f35e5bdb6fd2ac6b6a2cbdada24.setIcon(icon_e1937a60f77da0872ca7285aaa929b78);
+            
+    
+            var marker_a5b7937673b7e8e0dfa4436a14a7ac73 = L.marker(
+                [25.3, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_d60782aceafac39d5dcb0e90da4ddd00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a81b5abaaafe0f7b7d32c8a13cfecded = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ddb5d2de85090ab8f716110914c98ca = $(`<div id="html_4ddb5d2de85090ab8f716110914c98ca" style="width: 100.0%; height: 100.0%;"><b>SAN_LUIS_POTOSÍ</b><br>Lluvia: 3.7<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_a81b5abaaafe0f7b7d32c8a13cfecded.setContent(html_4ddb5d2de85090ab8f716110914c98ca);
+            
+        
+
+        marker_a5b7937673b7e8e0dfa4436a14a7ac73.bindPopup(popup_a81b5abaaafe0f7b7d32c8a13cfecded)
+        ;
+
+        
+    
+    
+            marker_a5b7937673b7e8e0dfa4436a14a7ac73.bindTooltip(
+                `<div>
+                     SAN_LUIS_POTOSÍ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a5b7937673b7e8e0dfa4436a14a7ac73.setIcon(icon_d60782aceafac39d5dcb0e90da4ddd00);
+            
+    
+            var marker_952875b3ab34eadf56e6bc2e78609716 = L.marker(
+                [25.4, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_4cc8ea7d854d906fc60369cacbe1a795 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c56abea6e353c04cc2303203e46c3794 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d8e43fc9a9e9ffaae47ce2847966806 = $(`<div id="html_1d8e43fc9a9e9ffaae47ce2847966806" style="width: 100.0%; height: 100.0%;"><b>SINALOA</b><br>Lluvia: 3.8<br>Rad: 520<br>AQI: 78</div>`)[0];
+                popup_c56abea6e353c04cc2303203e46c3794.setContent(html_1d8e43fc9a9e9ffaae47ce2847966806);
+            
+        
+
+        marker_952875b3ab34eadf56e6bc2e78609716.bindPopup(popup_c56abea6e353c04cc2303203e46c3794)
+        ;
+
+        
+    
+    
+            marker_952875b3ab34eadf56e6bc2e78609716.bindTooltip(
+                `<div>
+                     SINALOA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_952875b3ab34eadf56e6bc2e78609716.setIcon(icon_4cc8ea7d854d906fc60369cacbe1a795);
+            
+    
+            var marker_c6a280385bba7a8ce1a833fe2db6fc7f = L.marker(
+                [25.5, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_9d580d11958ac8e63bd81ce7233c539f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc34236783115827a332d8b260183c47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e0618978ac28e5412ac814bc458e5d3 = $(`<div id="html_7e0618978ac28e5412ac814bc458e5d3" style="width: 100.0%; height: 100.0%;"><b>SONORA</b><br>Lluvia: 3.8<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_cc34236783115827a332d8b260183c47.setContent(html_7e0618978ac28e5412ac814bc458e5d3);
+            
+        
+
+        marker_c6a280385bba7a8ce1a833fe2db6fc7f.bindPopup(popup_cc34236783115827a332d8b260183c47)
+        ;
+
+        
+    
+    
+            marker_c6a280385bba7a8ce1a833fe2db6fc7f.bindTooltip(
+                `<div>
+                     SONORA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6a280385bba7a8ce1a833fe2db6fc7f.setIcon(icon_9d580d11958ac8e63bd81ce7233c539f);
+            
+    
+            var marker_bd73211744f475ad023a73946238130a = L.marker(
+                [25.6, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_b29690e52e5ecd031326a6ff6a9d34bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a4b88c406ff549fe6b3e0e6dadf4afd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f8617b7873cd18918d144d5344462b4 = $(`<div id="html_2f8617b7873cd18918d144d5344462b4" style="width: 100.0%; height: 100.0%;"><b>TABASCO</b><br>Lluvia: 3.6<br>Rad: 523<br>AQI: 78</div>`)[0];
+                popup_7a4b88c406ff549fe6b3e0e6dadf4afd.setContent(html_2f8617b7873cd18918d144d5344462b4);
+            
+        
+
+        marker_bd73211744f475ad023a73946238130a.bindPopup(popup_7a4b88c406ff549fe6b3e0e6dadf4afd)
+        ;
+
+        
+    
+    
+            marker_bd73211744f475ad023a73946238130a.bindTooltip(
+                `<div>
+                     TABASCO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bd73211744f475ad023a73946238130a.setIcon(icon_b29690e52e5ecd031326a6ff6a9d34bb);
+            
+    
+            var marker_0c141fb376e17e88ba0e22993e9bbe0a = L.marker(
+                [25.7, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_dd114216e77761dcdfc6c0676ecf2b64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db7c48f05fc59469315276f0b462958a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_801cc7f885ac59a8e8613a9fcdd633ec = $(`<div id="html_801cc7f885ac59a8e8613a9fcdd633ec" style="width: 100.0%; height: 100.0%;"><b>TAMAULIPAS</b><br>Lluvia: 3.7<br>Rad: 522<br>AQI: 78</div>`)[0];
+                popup_db7c48f05fc59469315276f0b462958a.setContent(html_801cc7f885ac59a8e8613a9fcdd633ec);
+            
+        
+
+        marker_0c141fb376e17e88ba0e22993e9bbe0a.bindPopup(popup_db7c48f05fc59469315276f0b462958a)
+        ;
+
+        
+    
+    
+            marker_0c141fb376e17e88ba0e22993e9bbe0a.bindTooltip(
+                `<div>
+                     TAMAULIPAS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0c141fb376e17e88ba0e22993e9bbe0a.setIcon(icon_dd114216e77761dcdfc6c0676ecf2b64);
+            
+    
+            var marker_712832360fb253f68dffd076938ae4b9 = L.marker(
+                [25.8, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_c749febd366a44995ed1d6d09eaf6a94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1593aa25d77e76e640e05b21e96243d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad3dc9d4620f41ef0b00bea4b74ed2d2 = $(`<div id="html_ad3dc9d4620f41ef0b00bea4b74ed2d2" style="width: 100.0%; height: 100.0%;"><b>TLAXCALA</b><br>Lluvia: 3.8<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_1593aa25d77e76e640e05b21e96243d7.setContent(html_ad3dc9d4620f41ef0b00bea4b74ed2d2);
+            
+        
+
+        marker_712832360fb253f68dffd076938ae4b9.bindPopup(popup_1593aa25d77e76e640e05b21e96243d7)
+        ;
+
+        
+    
+    
+            marker_712832360fb253f68dffd076938ae4b9.bindTooltip(
+                `<div>
+                     TLAXCALA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_712832360fb253f68dffd076938ae4b9.setIcon(icon_c749febd366a44995ed1d6d09eaf6a94);
+            
+    
+            var marker_84ffe4b78c6ed91cc0b2e5fe46e54291 = L.marker(
+                [25.9, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_ce41386e4170e943f844bb526b845f7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3a7b4768e84201a69671006ab355020 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b824ac4618ee2a6030ecb1bb2162d72b = $(`<div id="html_b824ac4618ee2a6030ecb1bb2162d72b" style="width: 100.0%; height: 100.0%;"><b>VERACRUZ_DE_IGNACIO_DE_LA_LLAVE</b><br>Lluvia: 3.7<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_b3a7b4768e84201a69671006ab355020.setContent(html_b824ac4618ee2a6030ecb1bb2162d72b);
+            
+        
+
+        marker_84ffe4b78c6ed91cc0b2e5fe46e54291.bindPopup(popup_b3a7b4768e84201a69671006ab355020)
+        ;
+
+        
+    
+    
+            marker_84ffe4b78c6ed91cc0b2e5fe46e54291.bindTooltip(
+                `<div>
+                     VERACRUZ_DE_IGNACIO_DE_LA_LLAVE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_84ffe4b78c6ed91cc0b2e5fe46e54291.setIcon(icon_ce41386e4170e943f844bb526b845f7e);
+            
+    
+            var marker_11b9864bd1e626497fcbb34ca220d963 = L.marker(
+                [20.96, -89.59],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_9e586fe4da5b4794214f6d9194e61878 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1179d89cb53723ccffedaddf2b9b356c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d7bd860effb96f029a19c5e444d47d7 = $(`<div id="html_5d7bd860effb96f029a19c5e444d47d7" style="width: 100.0%; height: 100.0%;"><b>YUCATÁN</b><br>Lluvia: 3.7<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_1179d89cb53723ccffedaddf2b9b356c.setContent(html_5d7bd860effb96f029a19c5e444d47d7);
+            
+        
+
+        marker_11b9864bd1e626497fcbb34ca220d963.bindPopup(popup_1179d89cb53723ccffedaddf2b9b356c)
+        ;
+
+        
+    
+    
+            marker_11b9864bd1e626497fcbb34ca220d963.bindTooltip(
+                `<div>
+                     YUCATÁN
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_11b9864bd1e626497fcbb34ca220d963.setIcon(icon_9e586fe4da5b4794214f6d9194e61878);
+            
+    
+            var marker_c6bc153c60d8a3a0b4d9d6e70c4c53a5 = L.marker(
+                [26.1, -102.0],
+                {
+}
+            ).addTo(map_76271c8fa5a1e95434cc9e88bdb47cce);
+        
+    
+            var icon_c83308befa3b215433e0abcd1b61745e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_296786c55eb71ee95015678a20711689 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c380d4f9b6e09518014522cae726c6ea = $(`<div id="html_c380d4f9b6e09518014522cae726c6ea" style="width: 100.0%; height: 100.0%;"><b>ZACATECAS</b><br>Lluvia: 3.8<br>Rad: 521<br>AQI: 78</div>`)[0];
+                popup_296786c55eb71ee95015678a20711689.setContent(html_c380d4f9b6e09518014522cae726c6ea);
+            
+        
+
+        marker_c6bc153c60d8a3a0b4d9d6e70c4c53a5.bindPopup(popup_296786c55eb71ee95015678a20711689)
+        ;
+
+        
+    
+    
+            marker_c6bc153c60d8a3a0b4d9d6e70c4c53a5.bindTooltip(
+                `<div>
+                     ZACATECAS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6bc153c60d8a3a0b4d9d6e70c4c53a5.setIcon(icon_c83308befa3b215433e0abcd1b61745e);
+            
+</script>
+</html>
